@@ -1,4 +1,10 @@
  <script>
+ /** GTM iFrame interaction via postMessage 
+ * postMessage Listener. To be added to the parent window
+ * @license MIT License
+ * @author Rutger Meekers [rutger@meekers.eu]
+ */
+
 // Add an eventListener which listens for postMessages
 window.addEventListener('message', receiveMessage, false);
 

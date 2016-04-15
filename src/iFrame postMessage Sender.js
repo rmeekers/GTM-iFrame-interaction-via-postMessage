@@ -1,4 +1,10 @@
 <script>
+ /** GTM iFrame interaction via postMessage 
+ * postMessage Sender. To be added to the included iFrame window
+ * @license MIT License
+ * @author Rutger Meekers [rutger@meekers.eu]
+ */
+
 // Set the hostname of the parent window
 var parentHostname = (window.location != window.parent.location) ? document.referrer : document.location.href;
 
