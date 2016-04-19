@@ -18,4 +18,12 @@ Finally add a trigger which verifies that the outcome of this variable does not 
 Don't forget to add a Trigger which catches your event and sends it to Google Analytics.
 
 ### On the iFrame
-Insert the script _iFrame postMessage Sender.js_ and modify the parameters according to your wishes. 
+
+1. Include the script _iFrame postMessage Sender.js_  in your iFrame.
+2. Determine which events you want to track and trigger the following function with the parameters you want to include in your event:
+
+```
+// Example how to send a postMessage. Modify this with real values!
+// Parameters: messageType, eventAction, eventLabel, eventCategory.
+doPost('pushEventToDatalayer', 'Click', 'Button ID', 'Widgets');
+```
